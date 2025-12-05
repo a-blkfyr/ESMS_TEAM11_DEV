@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    line-height: normal;
+    background-image: url(./design/bg.png); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #e1e5eb;
+    font-family: Montserrat, sans-serif;
+    padding-top: 84px; 
+    min-height: 100vh;
+}
+.main {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    font-size: 24px;
+}
+header {
+    align-self: stretch;
+    height: 84px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+.logo {
+    height: 84px;
+    width: 204.7px;
+    position: relative;
+    object-fit: contain;
+}
+.navbar {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 101px;
+}
+.button-parent {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.button {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #2962ff;
+    padding: 10px 15px;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover,
+.button:focus {
+    color: #0d1b2a;
+    transform: translateY(-2px);
+    text-shadow: 0 4px 6px rgba(41, 98, 255, 0.3);
+}
+.button.current-page {
+    border-bottom: 3px solid #2962ff;
+}
+.register-button {
+    border-radius: 50px;
+    background-color: #2962ff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px; 
+    font-weight: 600; 
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 12px rgba(41, 98, 255, 0.4); 
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); 
+}
+.register-button a {
+    color: #f6f6f6;
+    text-decoration: none;
+    font-size: 18px;
+}
+.register-button:hover,
+.register-button:focus {
+    background-color: #0d1b2a; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+    transform: translateY(-3px) scale(1.02);
+}
+.register-button:active {
+    background-color: #0d1b2a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6); 
+    transform: translateY(0) scale(0.98); 
+}
+.agenda-hero-section {
+    width: 100%;
+    min-height: calc(100vh - 84px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.club-logo {
+    width: 500px; 
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px; 
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7)); 
+    opacity: 1;
+}
+.microcse-title {
+    font-family: Montserrat, sans-serif;
+    font-size: 100px; 
+    font-weight: 900; 
+    color: #e1e5eb; 
+    margin: 10px 0; 
+    background: linear-gradient(180deg, #FFFFFF 40%, #A8E4FF 60%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(41, 98, 255, 0.9); 
+    line-height: 1.1; 
+}
+.agenda-title {
+    font-size: 100px; 
+    font-weight: 700;
+    color: #fff;
+    margin: 10px 0 20px 0; 
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5); 
+  	font-family: Orbitron;
+}
+.agenda-calendar-icon {
+    width: 1000px; 
+    height: 500px; 
+    object-fit: contain;
+    margin-top: 20px; 
+    margin-bottom: 40px; 
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 0.9)) brightness(1.2);
+}
+.agenda-tagline {
+    font-family: Montserrat, sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #e1e5eb;
+    margin: 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.text-frame-parent, .event-image, .text-frame, .micro, .come-and-join, .register-2 {
+    display: none; 
+}
